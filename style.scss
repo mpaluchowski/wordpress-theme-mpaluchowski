@@ -355,24 +355,27 @@ main {
 
 			ol, ul {
 				margin-left: 10px;
+				position: relative;
 				
 				> li {
 					margin-left: 15px;
+
+					&:before {
+						left: 0;
+						position: absolute;
+					}
 				}
 			}
 
 			ol {
 				counter-reset: article-list-counter;
-				position: relative;
 
 				> li {
 					&:before {
 						content: counter(article-list-counter) ".";
 						counter-increment: article-list-counter;
-						left: 0;
 						font-size: 1.4em;
 						line-height: 130%;
-						position: absolute;
 					}
 				}
 			}
@@ -384,9 +387,9 @@ main {
 						display: inline-block;
 						background: #C9C9C9;
 						border-radius: 50%;
-						margin: 0 5px .1em 0;
-						height: .5em;
-						width: .5em;
+						height: .8em;
+						margin-top: .6em;
+						width: .8em;
 					}
 				}
 			}

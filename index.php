@@ -72,6 +72,13 @@
 					<h4>Written by <?php echo get_the_author() ?></h4>
 					<p><?php the_author_meta( 'description' ); ?></p>
 				</section>
+
+				<nav class="post-links">
+				<?php
+					previous_post_link( '%link' );
+					next_post_link( '%link' );
+				?>
+				</nav>
 				<?php
 					endif;
 				?>

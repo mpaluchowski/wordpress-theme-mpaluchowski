@@ -233,7 +233,7 @@ main {
 		style: solid;
 	}
 	box-sizing: border-box;
-	padding: 20px;
+	padding: 20px 20px 40px;
 
 	@media #{$responsive-phone} {
 		border-width: 1px 0 1px;
@@ -349,6 +349,38 @@ main {
 				p {
 					font-size: 1.3em;
 					line-height: 140%;
+				}
+			}
+
+			.post-links {
+				margin-top: 40px;
+				overflow: hidden;
+
+				a {
+					display: block;
+					color: $green-link;
+					font-size: 1.4em;
+					font-weight: bold;
+					text-decoration: none;
+
+					&[rel=prev] {
+						float: left;
+
+						&:before {
+							content: url(images/arrow_left16.png);
+							margin-right: 5px;
+							vertical-align: -20%;
+						}
+					}
+					&[rel=next] {
+						float: right;
+
+						&:after {
+							content: url(images/arrow_right16.png);
+							margin-left: 5px;
+							vertical-align: -20%;
+						}
+					}
 				}
 			}
 		}

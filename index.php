@@ -105,7 +105,7 @@
 		<?php endif; ?>
 
 		<?php
-			endif;
+			endif; // have_posts()
 		?>
 	</main>
 

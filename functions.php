@@ -25,3 +25,13 @@ function mpaluchowski_wp_title( $title, $sep ) {
 add_filter( 'wp_title', 'mpaluchowski_wp_title', 10, 2 );
 
 add_theme_support( 'custom-header', ['uploads' => true] );
+
+function mpaluchowski_previous_posts_attributes( ) {
+	return 'rel="next"';
+}
+add_filter( 'previous_posts_link_attributes', 'mpaluchowski_previous_posts_attributes' );
+
+function mpaluchowski_next_posts_attributes( ) {
+	return 'rel="prev"';
+}
+add_filter( 'next_posts_link_attributes', 'mpaluchowski_next_posts_attributes' );

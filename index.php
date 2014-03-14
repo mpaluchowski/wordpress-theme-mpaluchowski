@@ -80,7 +80,7 @@
 				?>
 				</section>
 
-				<nav class="post-links">
+				<nav class="post-navigation-links">
 				<?php
 					previous_post_link( '%link' );
 					next_post_link( '%link' );
@@ -93,6 +93,15 @@
 		</article>
 		<?php
 				endwhile;
+		?>
+			<nav class="post-navigation-links">
+			<?php
+				next_posts_link( 'Older stuff' );
+				previous_posts_link( 'Fresh thinking' );
+			?>
+			</nav>
+
+		<?php
 			endif;
 		?>
 	</main>

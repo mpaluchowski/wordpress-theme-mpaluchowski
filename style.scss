@@ -351,38 +351,6 @@ main {
 					line-height: 140%;
 				}
 			}
-
-			.post-links {
-				margin-top: 40px;
-				overflow: hidden;
-
-				a {
-					display: block;
-					color: $green-link;
-					font-size: 1.4em;
-					font-weight: bold;
-					text-decoration: none;
-
-					&[rel=prev] {
-						float: left;
-
-						&:before {
-							content: url(images/arrow_left16.png);
-							margin-right: 5px;
-							vertical-align: -20%;
-						}
-					}
-					&[rel=next] {
-						float: right;
-
-						&:after {
-							content: url(images/arrow_right16.png);
-							margin-left: 5px;
-							vertical-align: -20%;
-						}
-					}
-				}
-			}
 		}
 
 		.post-content {
@@ -442,6 +410,38 @@ main {
 						margin-top: .6em;
 						width: .8em;
 					}
+				}
+			}
+		}
+	}
+
+	.post-navigation-links {
+		margin-top: 40px;
+		overflow: hidden;
+
+		a {
+			display: block;
+			color: $green-link;
+			font-size: 1.4em;
+			font-weight: bold;
+			text-decoration: none;
+
+			&[rel=prev] {
+				float: left;
+
+				&:before {
+					content: url(images/arrow_left16.png);
+					margin-right: 5px;
+					vertical-align: -20%;
+				}
+			}
+			&[rel=next] {
+				float: right;
+
+				&:after {
+					content: url(images/arrow_right16.png);
+					margin-left: 5px;
+					vertical-align: -20%;
 				}
 			}
 		}

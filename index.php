@@ -94,12 +94,15 @@
 		<?php
 				endwhile;
 		?>
-			<nav class="post-navigation-links">
-			<?php
-				next_posts_link( 'Older stuff' );
-				previous_posts_link( 'Fresh thinking' );
-			?>
-			</nav>
+
+		<?php if ( !is_singular() ): ?>
+		<nav class="post-navigation-links">
+		<?php
+			next_posts_link( 'Older stuff' );
+			previous_posts_link( 'Fresh thinking' );
+		?>
+		</nav>
+		<?php endif; ?>
 
 		<?php
 			endif;

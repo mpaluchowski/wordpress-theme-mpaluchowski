@@ -64,6 +64,17 @@
 				<?php
 					the_tags('<ul class="tag-list"><li>', '</li><li>', '</li></ul>');
 				?>
+
+				<?php
+					if ( is_single() && get_the_author_meta( 'description' ) ) :
+				?>
+				<section class="author-description">
+					<h4>Written by <?php echo get_the_author() ?></h4>
+					<p><?php the_author_meta( 'description' ); ?></p>
+				</section>
+				<?php
+					endif;
+				?>
 			</footer>
 		</article>
 		<?php

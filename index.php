@@ -66,11 +66,18 @@
 				?>
 
 				<?php
-					if ( is_single() && get_the_author_meta( 'description' ) ) :
+					if ( is_single()):
 				?>
+
 				<section class="author-description">
 					<h4>Written by <?php echo get_the_author() ?></h4>
+				<?php
+					if ( get_the_author_meta( 'description' ) ):
+				?>
 					<p><?php the_author_meta( 'description' ); ?></p>
+				<?php
+					endif;
+				?>
 				</section>
 
 				<nav class="post-links">

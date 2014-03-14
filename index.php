@@ -66,7 +66,7 @@
 				?>
 
 				<?php
-					if ( is_single()):
+					if ( is_single() ):
 				?>
 
 				<section class="author-description">
@@ -76,7 +76,7 @@
 				?>
 					<p><?php the_author_meta( 'description' ); ?></p>
 				<?php
-					endif;
+					endif; // Check author description
 				?>
 				</section>
 
@@ -87,12 +87,18 @@
 				?>
 				</nav>
 				<?php
-					endif;
+					endif; // is_single()
 				?>
 			</footer>
+
+			<?php
+				if ( is_single() && ( comments_open() || get_comments_number() ) ) {
+					comments_template();
+				}
+			?>
 		</article>
 		<?php
-				endwhile;
+				endwhile; // have_posts()
 		?>
 
 		<?php if ( !is_singular() ): ?>
@@ -102,7 +108,7 @@
 			previous_posts_link( 'Fresh thinking' );
 		?>
 		</nav>
-		<?php endif; ?>
+		<?php endif; // is_singular() ?>
 
 		<?php
 			endif; // have_posts()

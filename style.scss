@@ -455,4 +455,62 @@ main {
 			}
 		}
 	}
+
+	.comments {
+		margin-top: 50px;
+
+		p.no-comments {
+			background: #EEE;
+			font-size: 1.4em;
+			border-radius: 13px 0 0 13px;
+			margin: 30px -20px 20px 20px;
+			padding: .5em;
+		}
+
+		.comment-list {
+			p {
+				font-size: 1.3em;
+				line-height: 140%;
+				margin: 10px 0;
+			}
+		}
+
+		.comment {
+			background: #EEE;
+			border-left: 40px solid #C9C9C9;
+			margin-right: -20px;
+			padding: 10px 20px 10px 12px;
+			position: relative;
+
+			img.avatar {
+				left: -40px;
+				position: absolute;
+			}
+
+			.comment-author {
+				font-size: 1.3em;
+
+				.fn {
+					font-weight: bold;
+				}
+			}
+
+			.comment-meta {
+				font-size: 1.3em;
+				margin-top: 5px;
+
+				&:before {
+					content: url(images/clock16.png);
+					margin-right: 2px;
+					vertical-align: -20%;
+				}
+			}
+
+			a {
+				color: $green-link;
+				text-decoration: none;
+			}
+		}
+
+	}
 }

@@ -1,7 +1,7 @@
-mpaluchowski Wordpress Theme
+mpaluchowski WordPress Theme
 ============================
 
-This is the custom [Wordpress](http://www.wordpress.org/) theme I use for my blog at http://michal.paluchowski.com/
+This is the custom [WordPress](http://www.wordpress.org/) theme I use for my blog at http://michal.paluchowski.com/
 
 License
 -------

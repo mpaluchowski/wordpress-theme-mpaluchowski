@@ -40,12 +40,12 @@
 		</div>
 	</header>
 
-	<main role="main">
+	<main role="main" itemscope itemtype="http://schema.org/Blog">
 		<?php
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();
 		?>
-		<article itemscope itemtype="http://schema.org/BlogPosting">
+		<article itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
 			<header>
 				<p class="post-meta">
 					<time datetime="<?php echo get_the_date( 'c' ) ?>" itemprop="datePublished"><?php echo esc_html( get_the_date() ) ?></time>

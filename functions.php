@@ -46,3 +46,17 @@ function the_schema_tags( $before = '<ul><li>', $sep = '</li><li>', $after = '</
 
 	echo $before . implode($tags_links, $sep) . $after;
 }
+
+if ( ! isset( $content_width ) ) $content_width = 640;
+
+wp_oembed_add_provider( '#https?://(www\.)?ted.com/talks/.*#i', 'http://www.ted.com/talks/oembed.{format}', true );
+
+function fix_embed_ted_height($oembvideo, $url, $attr) {
+	if (strpos($url, 'ted.com') !== false) {
+		preg_match( '#width="(\d+)"#', $oembvideo, $matches );
+		$width = $matches[1];
+		$oembvideo = preg_replace( '#height="\d+"#', 'height="' . $width * 0.5625 . '"', $oembvideo);
+	}
+	return $oembvideo;
+}
+add_filter('embed_oembed_html', 'fix_embed_ted_height', 10, 3);

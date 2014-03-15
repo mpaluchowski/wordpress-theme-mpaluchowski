@@ -363,7 +363,14 @@ main {
 		}
 
 		.post-content {
-			p {
+			> h2 {
+				font-size: 2em;
+				font-weight: bold;
+				line-height: 130%;
+				margin: 20px 0 10px;
+			}
+
+			> p {
 				font-size: 1.4em;
 				line-height: 140%;
 				margin: 0 0 .8em;
@@ -382,11 +389,13 @@ main {
 			}
 
 			ol, ul {
-				margin-left: 10px;
+				margin: 0 0 1.2em 10px;
 				position: relative;
 				
 				> li {
-					margin-left: 15px;
+					font-size: 1.4em;
+					line-height: 140%;
+					margin: 0 0 .4em 15px;
 
 					&:before {
 						left: 0;
@@ -402,8 +411,6 @@ main {
 					&:before {
 						content: counter(article-list-counter) ".";
 						counter-increment: article-list-counter;
-						font-size: 1.4em;
-						line-height: 130%;
 					}
 				}
 			}
@@ -416,7 +423,7 @@ main {
 						background: #C9C9C9;
 						border-radius: 50%;
 						height: .8em;
-						margin-top: .6em;
+						margin-top: .3em;
 						width: .8em;
 					}
 				}

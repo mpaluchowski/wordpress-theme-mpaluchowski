@@ -1,4 +1,10 @@
 <?php
+
+add_theme_support( 'custom-header', ['uploads' => true] );
+
+if ( ! isset( $content_width ) ) $content_width = 640;
+
+
 function mpaluchowski_wp_title( $title, $sep ) {
 	global $paged, $page;
 
@@ -24,7 +30,6 @@ function mpaluchowski_wp_title( $title, $sep ) {
 }
 add_filter( 'wp_title', 'mpaluchowski_wp_title', 10, 2 );
 
-add_theme_support( 'custom-header', ['uploads' => true] );
 
 function mpaluchowski_previous_posts_attributes( ) {
 	return 'rel="next"';
@@ -35,6 +40,7 @@ function mpaluchowski_next_posts_attributes( ) {
 	return 'rel="prev"';
 }
 add_filter( 'next_posts_link_attributes', 'mpaluchowski_next_posts_attributes' );
+
 
 function the_schema_tags( $before = '<ul><li>', $sep = '</li><li>', $after = '</li></ul>') {
 	$tags = get_the_tags();
@@ -47,7 +53,6 @@ function the_schema_tags( $before = '<ul><li>', $sep = '</li><li>', $after = '</
 	echo $before . implode($tags_links, $sep) . $after;
 }
 
-if ( ! isset( $content_width ) ) $content_width = 640;
 
 wp_oembed_add_provider( '#https?://(www\.)?ted.com/talks/.*#i', 'http://www.ted.com/talks/oembed.{format}', true );
 

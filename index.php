@@ -13,10 +13,10 @@
 
 	<?php wp_head(); ?>
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
 
 <div id="wrap">
-	<header id="site-head">
+	<header id="site-head" itemscope itemtype="http://schema.org/WPHeader">
 
 		<?php if ( get_header_image() ) : ?>
 		<div id="blog-logo">
@@ -26,8 +26,8 @@
 		</div>
 		<?php endif; ?>
 
-		<h1><?php bloginfo( 'name' ); ?></h1>
-		<h2><?php bloginfo( 'description' ); ?></h2>
+		<h1 itemprop="headline"><?php bloginfo( 'name' ); ?></h1>
+		<h2 itemprop="description"><?php bloginfo( 'description' ); ?></h2>
 
 		<div id="site-search">
 			<form role="search" method="get" id="searchform" class="searchform" action="http://michal.paluchowski.com/">
@@ -128,13 +128,13 @@
 	</main>
 
 	<div id="side-links">
-		<nav id="side-navigation">
+		<nav id="side-navigation" role="navigation" itemscope itemtype="htt://schema.org/SiteNavigationElement">
 			<ul>
 				<li><a href="http://michal.paluchowski.com/about/" rel="author">About Michał</a></li>
 			</ul>
 		</nav>
 
-		<footer>
+		<footer itemscope itemtype="http://schema.org/WPFooter">
 			Made in Warsaw by Michał Paluchowski. All text and code is under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.
 		</footer>
 	</div>

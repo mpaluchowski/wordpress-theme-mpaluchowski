@@ -62,7 +62,7 @@
 			</section>
 			<footer>
 				<?php
-					the_tags('<ul class="tag-list"><li>', '</li><li>', '</li></ul>');
+					the_schema_tags('<ul class="tag-list"><li>', '</li><li>', '</li></ul>');
 				?>
 
 				<?php

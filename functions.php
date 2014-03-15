@@ -35,3 +35,14 @@ function mpaluchowski_next_posts_attributes( ) {
 	return 'rel="prev"';
 }
 add_filter( 'next_posts_link_attributes', 'mpaluchowski_next_posts_attributes' );
+
+function the_schema_tags( $before = '<ul><li>', $sep = '</li><li>', $after = '</li></ul>') {
+	$tags = get_the_tags();
+	$tags_links = [];
+	foreach ($tags as $tag) {
+		$tags_links[] = '<a href="' . get_tag_link($tag->term_id)
+				. '" rel="tag" itemprop="keywords">'. $tag->name . '</a>';
+	}
+
+	echo $before . implode($tags_links, $sep) . $after;
+}

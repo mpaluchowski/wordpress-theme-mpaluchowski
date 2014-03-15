@@ -49,7 +49,7 @@
 			<header>
 				<p class="post-meta">
 					<time datetime="2013-07-06"><?php echo esc_html( get_the_date() ) ?></time>
-					<span class="comments"><?php comments_popup_link( __( 'Leave a comment', 'twentyfourteen' ), __( '1 Comment', 'twentyfourteen' ), __( '% Comments', 'twentyfourteen' ) ); ?></span>
+					<span class="comments"><?php comments_popup_link( __( 'Leave a comment', 'mpaluchowski' ), __( '1 Comment', 'mpaluchowski' ), __( '% Comments', 'mpaluchowski' ) ); ?></span>
 				</p>
 				<?php
 					the_title( '<h2><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
@@ -92,9 +92,21 @@
 			</footer>
 
 			<?php
-				if ( is_single() && ( comments_open() || get_comments_number() ) ) {
-					comments_template();
-				}
+				if ( is_single() ):
+			?>
+			<section class="comments">
+				<?php
+					if ( comments_open() || get_comments_number() ) {
+						comments_template();
+					}
+
+					if ( !comments_open() ) {
+						echo '<p class="no-comments">' . __( 'Comments are closed.', 'mpaluchowski' ) . '</p>';
+					}
+				?>
+			</section>
+			<?php
+				endif; // is_single()
 			?>
 		</article>
 		<?php

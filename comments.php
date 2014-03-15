@@ -1,4 +1,3 @@
-			<section class="comments">
 			<?php comment_form(); ?>
 
 			<ol class="comment-list">
@@ -10,8 +9,3 @@
 					) );
 				?>
 			</ol>
-
-			<?php if ( ! comments_open() ) : ?>
-			<p class="no-comments"><?php _e( 'Comments are closed.', 'twentyfourteen' ); ?></p>
-			<?php endif; // !comments_open() ?>
-			</section>

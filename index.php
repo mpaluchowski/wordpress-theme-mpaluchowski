@@ -40,7 +40,7 @@
 		</div>
 	</header>
 
-	<main role="main" itemscope itemtype="http://schema.org/Blog">
+	<main role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
 		<?php
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();

@@ -45,17 +45,17 @@
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();
 		?>
-		<article>
+		<article itemscope itemtype="http://schema.org/BlogPosting">
 			<header>
 				<p class="post-meta">
-					<time datetime="2013-07-06"><?php echo esc_html( get_the_date() ) ?></time>
+					<time datetime="<?php echo get_the_date( 'c' ) ?>" itemprop="datePublished"><?php echo esc_html( get_the_date() ) ?></time>
 					<span class="comments"><?php comments_popup_link( __( 'Leave a comment', 'mpaluchowski' ), __( '1 Comment', 'mpaluchowski' ), __( '% Comments', 'mpaluchowski' ) ); ?></span>
 				</p>
 				<?php
-					the_title( '<h2><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+					the_title( '<h2 itemprop="name headline"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 				?>
 			</header>
-			<section class="post-content">
+			<section class="post-content" itemprop="articleBody">
 				<?php
 					the_content();
 				?>
@@ -70,7 +70,7 @@
 				?>
 
 				<section class="author-description">
-					<h4>Written by <?php echo get_the_author() ?></h4>
+					<h4>Written by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php echo get_the_author() ?></span></span></h4>
 				<?php
 					if ( get_the_author_meta( 'description' ) ):
 				?>
@@ -130,7 +130,7 @@
 	<div id="side-links">
 		<nav id="side-navigation">
 			<ul>
-				<li><a href="http://michal.paluchowski.com/about/">About Michał</a></li>
+				<li><a href="http://michal.paluchowski.com/about/" rel="author">About Michał</a></li>
 			</ul>
 		</nav>
 

@@ -432,7 +432,7 @@ main {
 	}
 
 	.post-navigation-links {
-		margin-top: 40px;
+		margin-top: 30px;
 		overflow: hidden;
 
 		a {
@@ -440,6 +440,8 @@ main {
 			color: $green-link;
 			font-size: 1.4em;
 			font-weight: bold;
+			margin: 5px 21px;
+			position: relative;
 			text-decoration: none;
 
 			&[rel=prev] {
@@ -447,16 +449,19 @@ main {
 
 				&:before {
 					content: url(images/arrow_left16.png);
-					margin-right: 5px;
+					position: absolute;
+					left: -21px;
 					vertical-align: -20%;
 				}
 			}
 			&[rel=next] {
 				float: right;
+				text-align: right;
 
 				&:after {
 					content: url(images/arrow_right16.png);
-					margin-left: 5px;
+					position: absolute;
+					right: -21px;
 					vertical-align: -20%;
 				}
 			}

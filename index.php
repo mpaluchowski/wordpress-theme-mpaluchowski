@@ -26,8 +26,13 @@
 		</div>
 		<?php endif; ?>
 
-		<h1 itemprop="headline"><?php bloginfo( 'name' ); ?></h1>
-		<h2 itemprop="description"><?php bloginfo( 'description' ); ?></h2>
+		<?php if ( is_single() ): ?>
+			<div id="site-title" itemprop="headline"><?php bloginfo( 'name' ); ?></div>
+			<div id="site-description" itemprop="description"><?php bloginfo( 'description' ); ?></div>
+		<?php else: ?>
+			<h1 itemprop="headline"><?php bloginfo( 'name' ); ?></h1>
+			<h2 itemprop="description"><?php bloginfo( 'description' ); ?></h2>
+		<?php endif; ?>
 
 		<div id="site-search">
 			<form role="search" method="get" id="searchform" class="searchform" action="http://michal.paluchowski.com/">
@@ -52,7 +57,11 @@
 					<span class="comments"><?php comments_popup_link( __( 'Leave a comment', 'mpaluchowski' ), __( '1 Comment', 'mpaluchowski' ), __( '% Comments', 'mpaluchowski' ) ); ?></span>
 				</p>
 				<?php
-					the_title( '<h2 itemprop="name headline"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+					if ( is_single() ) {
+						the_title( '<h1 itemprop="name headline">', '</h1>' );
+					} else {
+						the_title( '<h2 itemprop="name headline"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+					}
 				?>
 			</header>
 			<section class="post-content" itemprop="articleBody">

@@ -108,14 +108,14 @@ table {
 		padding: 0 20px;
 	}
 
-	h1 {
+	h1, #site-title {
 		font-family: Roboto, Arial, sans-serif;
 		color: $green-header;
 		font-size: 4em;
 		margin: 25px 0 10px;
 	}
 
-	h2 {
+	h2, #site-description {
 		font-family: Roboto, Arial, sans-serif;
 		font-size: 1.8em;
 		line-height: 110%;
@@ -263,7 +263,7 @@ main {
 		}
 
 		header {
-			h2 {
+			h1, h2 {
 				font: {
 					family: Arial, Helvetica, sans-serif;
 					size: 2.4em;

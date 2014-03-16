@@ -251,7 +251,7 @@ main {
 		position: absolute;
 	}
 
-	article {
+	> article {
 		margin: 60px 0;
 
 		&:first-child {
@@ -321,7 +321,7 @@ main {
 			}
 		}
 
-		footer {
+		> footer {
 			margin-top: 20px;
 
 			.tag-list {
@@ -491,7 +491,7 @@ main {
 			p {
 				font-size: 1.3em;
 				line-height: 140%;
-				margin: 10px 0;
+				margin: 10px 0 0;
 			}
 		}
 
@@ -515,7 +515,7 @@ main {
 				}
 			}
 
-			.comment-meta {
+			.comment-metadata {
 				font-size: 1.3em;
 				margin-top: 5px;
 

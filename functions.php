@@ -13,8 +13,8 @@ function mpaluchowski_setup() {
 	) );
 
 }
-endif;
-
+endif; // mpaluchowski_setup()
+add_action( 'after_setup_theme', 'mpaluchowski_setup' );
 
 function mpaluchowski_wp_title( $title, $sep ) {
 	global $paged, $page;

@@ -74,9 +74,16 @@
 					the_schema_tags('<ul class="tag-list"><li>', '</li><li>', '</li></ul>');
 				?>
 
-				<?php
-					if ( is_single() ):
-				?>
+				<?php if ( is_single() ): ?>
+
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+				<a class="addthis_button_facebook"></a>
+				<a class="addthis_button_twitter"></a>
+				<a class="addthis_button_google_plusone_share"></a>
+				</div>
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f65aaed0d51a674"></script>
+				<!-- AddThis Button END -->
 
 				<section class="author-description">
 					<h4>Written by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php echo get_the_author() ?></span></span></h4>
@@ -95,9 +102,7 @@
 					next_post_link( '%link' );
 				?>
 				</nav>
-				<?php
-					endif; // is_single()
-				?>
+				<?php endif; // is_single() ?>
 			</footer>
 
 			<?php

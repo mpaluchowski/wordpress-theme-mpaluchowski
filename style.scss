@@ -80,12 +80,6 @@ table {
 	border-spacing: 0;
 }
 
-@media #{$responsive-tablet-desktop} {
-	html, body, #wrap, main {
-		height: 100%;
-	}
-}
-
 #wrap {
 	max-width: 960px;
 	margin: 0 auto;

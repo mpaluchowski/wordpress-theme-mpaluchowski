@@ -54,14 +54,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-html {
-	height: 100%;
-}
 body {
 	background: #EEE;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 62.5%;
-	height: 100%;
 	line-height: 1;
 
 	@media #{$responsive-phone} {
@@ -84,8 +80,13 @@ table {
 	border-spacing: 0;
 }
 
+@media #{$responsive-tablet-desktop} {
+	html, body, #wrap, main {
+		height: 100%;
+	}
+}
+
 #wrap {
-	height: 100%;
 	max-width: 960px;
 	margin: 0 auto;
 	position: relative;
@@ -238,7 +239,6 @@ main {
 		style: solid;
 	}
 	box-sizing: border-box;
-	height: 100%;
 	padding: 20px 20px 40px;
 
 	@media #{$responsive-phone} {

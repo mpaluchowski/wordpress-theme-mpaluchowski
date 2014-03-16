@@ -1,8 +1,19 @@
 <?php
 
-add_theme_support( 'custom-header', ['uploads' => true] );
 
 if ( ! isset( $content_width ) ) $content_width = 640;
+
+if ( ! function_exists( 'mpaluchowski_setup' ) ) :
+function mpaluchowski_setup() {
+
+	add_theme_support( 'custom-header', ['uploads' => true] );
+
+	add_theme_support( 'html5', array(
+		'search-form', 'comment-form', 'comment-list',
+	) );
+
+}
+endif;
 
 
 function mpaluchowski_wp_title( $title, $sep ) {

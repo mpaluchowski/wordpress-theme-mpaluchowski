@@ -1,0 +1,65 @@
+> h2 {
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 130%;
+	margin: 20px 0 10px;
+}
+
+> p {
+	font-size: 1.4em;
+	line-height: 140%;
+	margin: 0 0 .8em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	color: $green-link;
+}
+
+ol, ul {
+	margin: 0 0 1.2em 10px;
+	position: relative;
+	
+	> li {
+		font-size: 1.4em;
+		line-height: 140%;
+		margin: 0 0 .4em 15px;
+
+		&:before {
+			left: 0;
+			position: absolute;
+		}
+	}
+}
+
+ol {
+	counter-reset: article-list-counter;
+
+	> li {
+		&:before {
+			content: counter(article-list-counter) ".";
+			counter-increment: article-list-counter;
+		}
+	}
+}
+
+ul {
+	> li {
+		&:before {
+			content: "";
+			display: inline-block;
+			background: #C9C9C9;
+			border-radius: 50%;
+			height: .7em;
+			margin-top: .3em;
+			width: .7em;
+		}
+	}
+}

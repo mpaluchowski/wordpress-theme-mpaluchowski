@@ -110,9 +110,13 @@ table {
 
 	h1, #site-title {
 		font-family: Roboto, Arial, sans-serif;
-		color: $green-header;
 		font-size: 4em;
 		margin: 25px 0 10px;
+
+		a {
+			color: $green-header;
+			text-decoration: none;
+		}
 	}
 
 	h2, #site-description {

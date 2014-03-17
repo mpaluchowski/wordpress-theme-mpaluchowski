@@ -4,8 +4,12 @@
 if ( ! isset( $content_width ) ) $content_width = 640;
 
 if ( ! function_exists( 'mpaluchowski_setup' ) ) :
+/**
+ * Setup basic theme configuration.
+ */
 function mpaluchowski_setup() {
 
+	// Users can upload custom header images, showin in the sidebar
 	add_theme_support( 'custom-header', [
 		'uploads' => true,
 		'width' => 286,
@@ -14,6 +18,7 @@ function mpaluchowski_setup() {
 		'header-text' => false
 		] );
 
+	// Enable HTML5 markup for widgets
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list',
 	) );
@@ -59,6 +64,9 @@ function mpaluchowski_next_posts_attributes( ) {
 add_filter( 'next_posts_link_attributes', 'mpaluchowski_next_posts_attributes' );
 
 
+/**
+ * Adds http://schema.org/ markup to tags.
+ */
 function the_schema_tags( $before = '<ul><li>', $sep = '</li><li>', $after = '</li></ul>') {
 	$tags = get_the_tags();
 
@@ -74,9 +82,16 @@ function the_schema_tags( $before = '<ul><li>', $sep = '</li><li>', $after = '</
 	echo $before . implode($tags_links, $sep) . $after;
 }
 
-
+// Add embedder provider for TED Talks
 wp_oembed_add_provider( '#https?://(www\.)?ted.com/talks/.*#i', 'http://www.ted.com/talks/oembed.{format}', true );
 
+/**
+ * TED Talks added with WordPress's standard embedder show with the wrong
+ * proportions. Width is fine, following the configured content width, but height
+ * was way too long.
+ *
+ * This changes height to be proportional for 16:9 videos.
+ */
 function fix_embed_ted_height($oembvideo, $url, $attr) {
 	if (strpos($url, 'ted.com') !== false) {
 		preg_match( '#width="(\d+)"#', $oembvideo, $matches );

@@ -18,6 +18,8 @@ function mpaluchowski_setup() {
 		'header-text' => false
 		] );
 
+	add_editor_style( array( 'css/editor-style.css' ) );
+
 	// Enable HTML5 markup for widgets
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list',

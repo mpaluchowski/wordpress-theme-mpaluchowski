@@ -1,0 +1,84 @@
+
+html .mceContentBody {
+	font-size: 14px;
+	max-width: 640px;
+}
+
+body {
+	color: #000;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 130%;
+	margin: 20px 0 10px;
+}
+
+p {
+	font-size: 14px;
+	line-height: 140%;
+	margin: 0 0 .8em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	color: #135e13;
+}
+
+ol, ul {
+	margin: 0 0 12px 10px;
+	position: relative;
+	
+	> li {
+		font-size: 14px;
+		line-height: 140%;
+		margin: 0 0 4px 15px;
+
+		&:before {
+			left: 0;
+			position: absolute;
+		}
+	}
+}
+
+ol {
+	counter-reset: article-list-counter;
+
+	> li {
+		&:before {
+			content: counter(article-list-counter) ".";
+			counter-increment: article-list-counter;
+		}
+	}
+}
+
+ul {
+	> li {
+		&:before {
+			content: "";
+			display: inline-block;
+			background: #C9C9C9;
+			border-radius: 50%;
+			height: 7px;
+			margin-top: 3px;
+			width: 7px;
+		}
+	}
+}

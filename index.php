@@ -58,7 +58,7 @@
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();
 		?>
-		<article itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+		<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 			<header>
 				<p class="post-meta">
 					<time datetime="<?php echo get_the_date( 'c' ) ?>" itemprop="datePublished"><?php echo esc_html( get_the_date() ) ?></time>

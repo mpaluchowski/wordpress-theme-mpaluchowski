@@ -91,6 +91,16 @@
 				<a class="addthis_button_google_plusone_share"></a>
 				</div>
 				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f65aaed0d51a674"></script>
+				<script type="text/javascript">
+					var addthis_share = addthis_share || {}
+						addthis_share = {
+							passthrough : {
+								twitter: {
+									via: "mpaluchowski"
+							}
+						}
+					}
+				</script>
 				<!-- AddThis Button END -->
 
 				<section class="author-description">

@@ -58,21 +58,21 @@
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();
 		?>
-		<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<article class="h-entry" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 			<header>
 				<p class="post-meta">
-					<time datetime="<?php echo get_the_date( 'c' ) ?>" itemprop="datePublished"><?php echo esc_html( get_the_date() ) ?></time>
+					<time class="dt-published" datetime="<?php echo get_the_date( 'c' ) ?>" itemprop="datePublished"><?php echo esc_html( get_the_date() ) ?></time>
 					<span class="comments"><?php comments_popup_link( __( 'Leave a comment', 'mpaluchowski' ), __( '1 Comment', 'mpaluchowski' ), __( '% Comments', 'mpaluchowski' ) ); ?></span>
 				</p>
 				<?php
 					if ( is_single() ) {
-						the_title( '<h1 itemprop="name headline">', '</h1>' );
+						the_title( '<h1 class="p-name" itemprop="name headline">', '</h1>' );
 					} else {
-						the_title( '<h2 itemprop="name headline"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+						the_title( '<h2 class="p-name" itemprop="name headline"><a href="' . esc_url( get_permalink() ) . '" class="u-url">', '</a></h2>' );
 					}
 				?>
 			</header>
-			<section class="post-content" itemprop="articleBody">
+			<section class="post-content e-content" itemprop="articleBody">
 				<?php
 					the_content();
 				?>
@@ -94,7 +94,7 @@
 				<!-- AddThis Button END -->
 
 				<section class="author-description">
-					<h4>Written by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php echo get_the_author() ?></span></span></h4>
+					<h4>Written by <span class="p-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php echo get_the_author() ?></span></span></h4>
 				<?php
 					if ( get_the_author_meta( 'description' ) ):
 				?>

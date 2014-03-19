@@ -100,6 +100,9 @@
 							}
 						}
 					}
+					var addthis_config = {
+						data_track_clickback : false
+					}
 				</script>
 				<!-- AddThis Button END -->
 

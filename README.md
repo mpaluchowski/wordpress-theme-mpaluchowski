@@ -11,6 +11,14 @@ Features
 * HTML5 and CSS3
 * Schema.org and Microformats markup
 * AddThis sharing widgets
+* Support for translations
+
+Installation
+------------
+
+1. Unpack the theme into the `mpaluchowski` directory in your WordPress directory under `wp-content/themes`.
+1. Parse the files `styles.scss` and `css/editor-style.scss` with the [SASS compiler](http://sass-lang.com/).
+1. Theme should now be available for selection in WordPress's Themes menu.
 
 License
 -------

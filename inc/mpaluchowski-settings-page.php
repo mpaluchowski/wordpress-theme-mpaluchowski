@@ -139,6 +139,7 @@ class MpaluchowskiSettingsPage {
 			'<input type="text" id="addthis_services" name="mpaluchowski_option[addthis_services]" value="%s" />',
 			isset( $this->options['addthis_services'] ) ? esc_attr( $this->options['addthis_services']) : ''
 		);
+		print('<p class="description">' . __('Coma-delimited list of <a href="http://www.addthis.com/services/list">AddThis services</a>', 'mpaluchowski') . '</p>');
 	}
 
 	public function addthis_twitter_via_callback() {
@@ -146,6 +147,7 @@ class MpaluchowskiSettingsPage {
 			'<input type="text" id="addthis_twitter_via" name="mpaluchowski_option[addthis_twitter_via]" value="%s" />',
 			isset( $this->options['addthis_twitter_via'] ) ? esc_attr( $this->options['addthis_twitter_via']) : ''
 		);
+		print('<p class="description">' . __('Your Twitter handle <strong>without</strong> the leading @ sign', 'mpaluchowski') . '</p>');
 	}
 }
 

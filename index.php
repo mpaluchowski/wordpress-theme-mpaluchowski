@@ -103,7 +103,7 @@
 							}
 						}
 					var addthis_config = {
-						data_track_clickback : false
+						data_track_clickback : <?php echo get_option( 'mpaluchowski_option' )['addthis_track_clickback'] ? 'true' : 'false' ?>
 					}
 				</script>
 				<!-- AddThis Button END -->

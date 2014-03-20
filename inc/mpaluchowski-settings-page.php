@@ -90,6 +90,14 @@ class MpaluchowskiSettingsPage {
 			'mpaluchowski-settings-admin',
 			'section_addthis'
 		);
+
+		add_settings_field(
+			'addthis_track_clickback',
+			'Track ClickBacks',
+			array( $this, 'addthis_track_clickback_callback' ),
+			'mpaluchowski-settings-admin',
+			'section_addthis'
+		);
 	}
 
 	/**
@@ -111,6 +119,9 @@ class MpaluchowskiSettingsPage {
 			$new_input['addthis_twitter_via'] = preg_replace('#@(.*)#', '$1', $new_input['addthis_twitter_via']);
 		}
 
+		if( isset( $input['addthis_track_clickback'] ) )
+			$new_input['addthis_track_clickback'] = absint( $input['addthis_track_clickback'] );
+
 		return $new_input;
 	}
 
@@ -126,7 +137,7 @@ class MpaluchowskiSettingsPage {
 	 */
 	public function addthis_profile_id_callback() {
 		printf(
-			'<input type="text" id="addthis_profile_id" name="mpaluchowski_option[addthis_profile_id]" value="%s" />',
+			'<input type="text" id="addthis_profile_id" name="mpaluchowski_option[addthis_profile_id]" value="%s">',
 			isset( $this->options['addthis_profile_id'] ) ? esc_attr( $this->options['addthis_profile_id']) : ''
 		);
 	}
@@ -136,7 +147,7 @@ class MpaluchowskiSettingsPage {
 	 */
 	public function addthis_services_callback() {
 		printf(
-			'<input type="text" id="addthis_services" name="mpaluchowski_option[addthis_services]" value="%s" />',
+			'<input type="text" id="addthis_services" name="mpaluchowski_option[addthis_services]" value="%s">',
 			isset( $this->options['addthis_services'] ) ? esc_attr( $this->options['addthis_services']) : ''
 		);
 		print('<p class="description">' . __('Coma-delimited list of <a href="http://www.addthis.com/services/list">AddThis services</a>', 'mpaluchowski') . '</p>');
@@ -144,10 +155,15 @@ class MpaluchowskiSettingsPage {
 
 	public function addthis_twitter_via_callback() {
 		printf(
-			'<input type="text" id="addthis_twitter_via" name="mpaluchowski_option[addthis_twitter_via]" value="%s" />',
+			'<input type="text" id="addthis_twitter_via" name="mpaluchowski_option[addthis_twitter_via]" value="%s">',
 			isset( $this->options['addthis_twitter_via'] ) ? esc_attr( $this->options['addthis_twitter_via']) : ''
 		);
 		print('<p class="description">' . __('Your Twitter handle <strong>without</strong> the leading @ sign', 'mpaluchowski') . '</p>');
+	}
+
+	public function addthis_track_clickback_callback() {
+		print('<input type="checkbox" id="addthis_track_clickback" name="mpaluchowski_option[addthis_track_clickback]" value="1" ' . checked( 1, get_option( 'mpaluchowski_option' )['addthis_track_clickback'], false ) . '>');
+		print('<p class="description">' . __('Should AddThis append a tracking ID to the links being shared?', 'mpaluchowski') . '</p>');
 	}
 }
 

@@ -86,20 +86,22 @@
 
 				<!-- AddThis Button BEGIN -->
 				<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-				<a class="addthis_button_facebook"></a>
-				<a class="addthis_button_twitter"></a>
-				<a class="addthis_button_google_plusone_share"></a>
+				<?php foreach ( explode( ',', get_option( 'mpaluchowski_option' )['addthis_services'] ) as $service ): ?>
+				<a class="addthis_button_<?php echo $service ?>"></a>
+				<?php endforeach; ?>
 				</div>
-				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f65aaed0d51a674"></script>
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=<?php echo get_option( 'mpaluchowski_option' )['addthis_profile_id'] ?>"></script>
 				<script type="text/javascript">
 					var addthis_share = addthis_share || {}
 						addthis_share = {
 							passthrough : {
 								twitter: {
-									via: "mpaluchowski"
+									<?php if ( get_option( 'mpaluchowski_option' )['addthis_twitter_via'] ): ?>
+									via: "<?php echo get_option( 'mpaluchowski_option' )['addthis_twitter_via'] ?>"
+									<?php endif; ?>
+								}
 							}
 						}
-					}
 					var addthis_config = {
 						data_track_clickback : false
 					}

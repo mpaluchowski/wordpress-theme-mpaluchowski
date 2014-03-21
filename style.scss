@@ -411,5 +411,87 @@ main {
 			}
 		}
 
+		.comment-respond {
+			h3 {
+				background: #EEE;
+				font-size: 1.4em;
+				border-radius: 13px 0 0 13px;
+				margin: 30px -20px 20px 20px;
+				padding: .5em;
+			}
+
+			.required {
+				color: #F00;
+				font-size: 3em;
+				font-weight: bold;
+				margin: 8px 0 0 5px;
+				position: absolute;
+			}
+
+			.comment-form-author,
+			.comment-form-email,
+			.comment-form-url,
+			.comment-form-comment {
+				margin: 5px 0;
+				padding-left: 70px;
+				position: relative;
+
+				label {
+					font-size: 1.3em;
+					left: 0;
+					line-height: 140%;
+					padding: .5em 0;
+					position: absolute;
+					width: 65px;
+				}
+
+				input, textarea {
+					border: 1px solid #C9C9C9;
+					border-radius: 2px;
+					box-sizing: border-box;
+					padding: .2em .2em;
+					width: 100%;
+				}
+			}
+
+			.comment-notes,
+			.form-allowed-tags,
+			.logged-in-as {
+				font-size: 1.3em;
+				line-height: 140%;
+				margin-left: 70px;
+				position: relative;
+
+				code {
+					font-family: Consolas, "Courier New", monospace;
+				}
+
+				a {
+					color: $green-link;
+				}
+
+				abbr {
+					border-bottom: 1px dotted #000;
+					cursor: help;
+				}
+			}
+
+			.form-submit {
+				margin: 10px 0 0 70px;
+
+				input {
+					background: #444;
+					border: 0;
+					cursor: pointer;
+					color: #FFF;
+					border-radius: 2px;
+					padding: 5px 8px;
+
+					&:hover {
+						background: $green-link;
+					}
+				}
+			}
+		}
 	}
 }

@@ -104,5 +104,21 @@ function fix_embed_ted_height($oembvideo, $url, $attr) {
 }
 add_filter('embed_oembed_html', 'fix_embed_ted_height', 10, 3);
 
+/**
+ * Allows for getting the excerpt outside of The Loop.
+ */
+function mpaluchowski_get_excerpt( $post_id = 0, $length = 35 ) {
+	$post = get_post( $post_id );
+	$the_excerpt = $post->post_content;
+	$the_excerpt = strip_tags( strip_shortcodes( $the_excerpt ) );
+	$words = explode( ' ', $the_excerpt, $length + 1 );
+	if ( count( $words ) > $length ) {
+		array_pop( $words );
+		array_push( $words, '...' );
+		$the_excerpt = implode( ' ', $words );
+	}
+	return $the_excerpt;
+}
+
 // Add Theme Settings Page
 require get_template_directory() . '/inc/mpaluchowski-settings-page.php';

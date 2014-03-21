@@ -24,30 +24,18 @@ a {
 }
 
 ol, ul {
-	margin: 0 0 1.2em 10px;
+	margin: 0 0 1.2em 15px;
 	position: relative;
 	
 	> li {
 		font-size: 1.4em;
 		line-height: 140%;
 		margin: 0 0 .4em 15px;
-
-		&:before {
-			left: 0;
-			position: absolute;
-		}
 	}
 }
 
 ol {
-	counter-reset: article-list-counter;
-
-	> li {
-		&:before {
-			content: counter(article-list-counter) ".";
-			counter-increment: article-list-counter;
-		}
-	}
+	list-style-type: decimal;
 }
 
 ul {
@@ -57,8 +45,10 @@ ul {
 			display: inline-block;
 			background: #C9C9C9;
 			border-radius: 50%;
+			left: -2px;
+			position: absolute;
 			height: .7em;
-			margin-top: .3em;
+			margin: .4em 0 0;
 			width: .7em;
 		}
 	}

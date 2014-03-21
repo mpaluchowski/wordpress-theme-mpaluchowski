@@ -416,6 +416,16 @@ main {
 				color: $green-link;
 				text-decoration: none;
 			}
+
+			.reply {
+				font-size: 1.4em;
+				margin-top: 15px;
+
+				&:before {
+					content: url(images/comment16.png);
+					vertical-align: -20%;
+				}
+			}
 		}
 
 		.comment-respond {
@@ -427,6 +437,10 @@ main {
 				border-radius: 13px 0 0 13px;
 				margin: 30px -20px 20px 20px;
 				padding: .5em .8em;
+
+				a {
+					color: $green-link;
+				}
 			}
 
 			form {

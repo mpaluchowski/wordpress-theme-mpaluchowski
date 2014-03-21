@@ -5,7 +5,7 @@
 					wp_list_comments( array(
 						'style'      => 'ol',
 						'short_ping' => true,
-						'avatar_size'=> 40,
+						'avatar_size'=> 80,
 					) );
 				?>
 			</ol>

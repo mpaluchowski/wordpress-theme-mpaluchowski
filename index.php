@@ -22,6 +22,7 @@
 	<?php endif; ?>
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:creator" content="@mpaluchowski">
+	<meta name="twitter:site" content="@mpaluchowski">
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 

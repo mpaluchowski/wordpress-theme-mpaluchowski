@@ -25,6 +25,18 @@ function mpaluchowski_setup() {
 		'search-form', 'comment-form', 'comment-list',
 	) );
 
+	// Add Roboto font used for header
+	wp_enqueue_style(
+		'mpaluchowski-roboto',
+		'//fonts.googleapis.com/css?family=Roboto:900&subset=latin,latin-ext',
+		array(),
+		null
+		);
+
+
+	// Add main theme stylesheet
+	wp_enqueue_style( 'mpaluchowski-style', get_stylesheet_uri() );
+
 }
 endif; // mpaluchowski_setup()
 add_action( 'after_setup_theme', 'mpaluchowski_setup' );

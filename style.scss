@@ -267,6 +267,14 @@ main {
 			margin-top: 20px;
 
 			.tag-list {
+				margin-left: 21px;
+
+				&:before {
+					content: url(images/tag_fill_16x16.png);
+					position: absolute;
+					margin: 4px 0 0 -21px;
+				}
+
 				li {
 					display: inline-block;
 					margin: 0 5px 5px 0;

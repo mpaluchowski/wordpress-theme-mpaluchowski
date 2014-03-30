@@ -1,21 +1,21 @@
 > h2 {
-	font-size: 2em;
+	font-size: 2rem;
 	font-weight: bold;
 	line-height: 130%;
 	margin: 20px 0 10px;
 }
 
 > p, blockquote > p {
-	font-size: 1.4em;
+	font-size: 1.4rem;
 	line-height: 150%;
-	margin: 0 0 .8em;
+	margin: 0 0 1.1rem;
 
 	code {
 		border: 1px solid #C9C9C9;
 		background: #EEE;
 		border-radius: 3px;
-		font-size: .93em;
-		padding: .1em .2em;
+		font-size: 1.3rem;
+		padding: .1rem .2rem;
 		white-space: nowrap;
 	}
 
@@ -45,13 +45,13 @@ a {
 }
 
 ol, ul {
-	margin: 0 0 1.2em 15px;
+	margin: 0 0 1.2rem 15px;
 	position: relative;
 	
 	> li {
-		font-size: 1.4em;
+		font-size: 1.4rem;
 		line-height: 140%;
-		margin: 0 0 .4em 15px;
+		margin: 0 0 .4rem 15px;
 	}
 }
 
@@ -68,9 +68,9 @@ ul {
 			border-radius: 50%;
 			left: -2px;
 			position: absolute;
-			height: .7em;
-			margin: .4em 0 0;
-			width: .7em;
+			height: .7rem;
+			margin: .4rem 0 0;
+			width: .7rem;
 		}
 	}
 }
@@ -91,6 +91,6 @@ pre {
 	white-space: pre-wrap;
 
 	code {
-		font-size: 1.3em;
+		font-size: 1.3rem;
 	}
 }

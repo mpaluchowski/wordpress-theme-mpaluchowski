@@ -189,6 +189,7 @@ main {
 		left: 0;
 		margin-left: 185px;
 		position: absolute;
+		right: 0;
 	}
 
 	@media #{$responsive-desktop} {
@@ -196,6 +197,7 @@ main {
 		left: 0;
 		margin-left: 285px;
 		position: absolute;
+		right: 0;
 	}
 
 	> article {

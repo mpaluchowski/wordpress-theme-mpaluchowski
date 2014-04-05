@@ -20,6 +20,10 @@
 	<meta name="twitter:title" content="<?php bloginfo( 'name' ) ?>">
 	<meta name="twitter:description" content="<?php bloginfo( 'description' ) ?>">
 	<?php endif; ?>
+	<?php if ( has_post_thumbnail() ): ?>
+	<meta property="og:image" content="<?php wp_get_attachment_image_src( get_post_thumbnail_id() ) ?>">
+	<meta property="twitter:image" content="<?php wp_get_attachment_image_src( get_post_thumbnail_id() ) ?>">
+	<?php endif; ?>
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:creator" content="@mpaluchowski">
 	<meta name="twitter:site" content="@mpaluchowski">

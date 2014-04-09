@@ -61,6 +61,11 @@ a {
 	color: $green-link;
 }
 
+abbr {
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+
 ol, ul {
 	position: relative;
 	

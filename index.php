@@ -6,15 +6,16 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="<?php echo mpaluchowski_get_excerpt( 0, 30 ) ?>">
 	<meta property="og:url" content="<?php the_permalink() ?>">
 	<?php if ( is_single() ): ?>
+	<meta name="description" content="<?php echo mpaluchowski_get_excerpt( 0, 30 ) ?>">
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="<?php single_post_title() ?>">
 	<meta property="og:description" content="<?php echo mpaluchowski_get_excerpt( 0, 30 ) ?>">
 	<meta name="twitter:title" content="<?php single_post_title() ?>">
 	<meta name="twitter:description" content="<?php echo mpaluchowski_get_excerpt( 0, 30 ) ?>">
 	<?php else: ?>
+	<meta name="description" content="<?php bloginfo( 'description' ) ?>">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="<?php bloginfo( 'name' ) ?>">
 	<meta property="og:description" content="<?php bloginfo( 'description' ) ?>">

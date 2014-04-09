@@ -6,6 +6,7 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<meta name="description" content="<?php echo mpaluchowski_get_excerpt( 0, 30 ) ?>">
 	<meta property="og:url" content="<?php the_permalink() ?>">
 	<?php if ( is_single() ): ?>
 	<meta property="og:type" content="article">

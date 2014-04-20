@@ -118,29 +118,24 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 	li {
 		margin: 10px 0;
-
-		&:before {
-			content: " ";
-			background: #C9C9C9;
-			border-radius: 50%;
-			height: 1.4em;
-			width: 1.4em;
-		}
 	}
 
 	a {
 		color: #000;
 		font-size: 1.4rem;
 		font-weight: bold;
+		margin-left: 1.4em;
+		position: relative;
 		text-decoration: none;
 
 		&:before {
-			content: "";
-			display: inline-block;
 			background: #C9C9C9;
 			border-radius: 50%;
-			margin: 0 5px -.1em 0;
+			content: " ";
+			display: block;
+			left: -1.4em;
 			height: 1em;
+			position: absolute;
 			width: 1em;
 		}
 

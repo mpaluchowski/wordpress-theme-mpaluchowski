@@ -124,7 +124,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		color: #000;
 		font-size: 1.4rem;
 		font-weight: bold;
-		margin-left: 1.4em;
+		margin-left: 1em;
+		padding-left: .4em;
 		position: relative;
 		text-decoration: none;
 
@@ -133,7 +134,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			border-radius: 50%;
 			content: " ";
 			display: block;
-			left: -1.4em;
+			left: -1em;
 			height: 1em;
 			position: absolute;
 			width: 1em;

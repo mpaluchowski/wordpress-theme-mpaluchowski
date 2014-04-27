@@ -100,10 +100,6 @@
 				?>
 			</section>
 			<footer>
-				<?php
-					the_schema_tags('<ul class="tag-list"><li>', '</li><li>', '</li></ul>');
-				?>
-
 				<?php if ( is_single() ): ?>
 
 				<!-- AddThis Button BEGIN -->
@@ -129,6 +125,13 @@
 					}
 				</script>
 				<!-- AddThis Button END -->
+				<?php endif; // is_single() ?>
+
+				<?php
+					the_schema_tags('<ul class="tag-list"><li>', '</li><li>', '</li></ul>');
+				?>
+
+				<?php if ( is_single() ): ?>
 
 				<section class="author-description">
 					<h4>Written by <span class="p-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php echo get_the_author() ?></span></span></h4>

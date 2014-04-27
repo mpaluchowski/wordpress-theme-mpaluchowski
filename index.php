@@ -35,7 +35,7 @@
 
 	<?php wp_head(); ?>
 </head>
-<body itemscope itemtype="http://schema.org/WebPage">
+<body <?php body_class() ?> itemscope itemtype="http://schema.org/WebPage">
 
 <div id="wrap">
 	<header id="site-head" itemscope itemtype="http://schema.org/WPHeader">

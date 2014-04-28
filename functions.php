@@ -25,6 +25,15 @@ function mpaluchowski_setup() {
 		'search-form', 'comment-form', 'comment-list',
 	) );
 
+}
+endif; // mpaluchowski_setup()
+add_action( 'after_setup_theme', 'mpaluchowski_setup' );
+
+/**
+ * Enqueue scripts and styles for the front end.
+ */
+function mpaluchowski_scripts() {
+
 	// Add Roboto font used for header
 	wp_enqueue_style(
 		'mpaluchowski-roboto',
@@ -38,8 +47,7 @@ function mpaluchowski_setup() {
 	wp_enqueue_style( 'mpaluchowski-style', get_stylesheet_uri() );
 
 }
-endif; // mpaluchowski_setup()
-add_action( 'after_setup_theme', 'mpaluchowski_setup' );
+add_action( 'wp_enqueue_scripts', 'mpaluchowski_scripts' );
 
 function mpaluchowski_wp_title( $title, $sep ) {
 	global $paged, $page;

@@ -1,7 +1,7 @@
 <?php
 
 
-if ( ! isset( $content_width ) ) $content_width = 640;
+if ( ! isset( $content_width ) ) $content_width = 630;
 
 if ( ! function_exists( 'mpaluchowski_setup' ) ) :
 /**

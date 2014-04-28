@@ -159,7 +159,7 @@ class MpaluchowskiSettingsPage {
 	 */
 	public function addthis_profile_id_callback() {
 		printf(
-			'<input type="text" id="addthis_profile_id" name="mpaluchowski_option[addthis_profile_id]" value="%s">',
+			'<input type="text" id="addthis_profile_id" name="mpaluchowski_option[addthis_profile_id]" value="%s" class="regular-text">',
 			isset( $this->options['addthis_profile_id'] ) ? esc_attr( $this->options['addthis_profile_id']) : ''
 		);
 	}
@@ -169,7 +169,7 @@ class MpaluchowskiSettingsPage {
 	 */
 	public function addthis_services_callback() {
 		printf(
-			'<input type="text" id="addthis_services" name="mpaluchowski_option[addthis_services]" value="%s">',
+			'<input type="text" id="addthis_services" name="mpaluchowski_option[addthis_services]" value="%s" class="regular-text">',
 			isset( $this->options['addthis_services'] ) ? esc_attr( $this->options['addthis_services']) : ''
 		);
 		print('<p class="description">' . __('Coma-delimited list of <a href="http://www.addthis.com/services/list">AddThis services</a>', 'mpaluchowski') . '</p>');
@@ -177,7 +177,7 @@ class MpaluchowskiSettingsPage {
 
 	public function addthis_twitter_via_callback() {
 		printf(
-			'<input type="text" id="addthis_twitter_via" name="mpaluchowski_option[addthis_twitter_via]" value="%s">',
+			'<input type="text" id="addthis_twitter_via" name="mpaluchowski_option[addthis_twitter_via]" value="%s" class="regular-text">',
 			isset( $this->options['addthis_twitter_via'] ) ? esc_attr( $this->options['addthis_twitter_via']) : ''
 		);
 		print('<p class="description">' . __('Your Twitter handle <strong>without</strong> the leading @ sign', 'mpaluchowski') . '</p>');
@@ -194,7 +194,7 @@ class MpaluchowskiSettingsPage {
 
 	public function twitter_follow_username_callback() {
 		printf(
-			'<input type="text" id="twitter_follow_username" name="mpaluchowski_option[twitter_follow_username]" value="%s">',
+			'<input type="text" id="twitter_follow_username" name="mpaluchowski_option[twitter_follow_username]" value="%s" class="regular-text">',
 			isset( $this->options['twitter_follow_username'] ) ? esc_attr( $this->options['twitter_follow_username']) : ''
 		);
 		print('<p class="description">' . __('Your Twitter handle for the Follow button, <strong>without</strong> the leading @ sign', 'mpaluchowski') . '</p>');

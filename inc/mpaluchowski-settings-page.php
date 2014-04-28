@@ -98,6 +98,22 @@ class MpaluchowskiSettingsPage {
 			'mpaluchowski-settings-admin',
 			'section_addthis'
 		);
+
+		add_settings_section(
+			'section_twitter', // ID
+			'Twitter', // Title
+			array( $this, 'print_twitter_section_info' ), // Callback
+			'mpaluchowski-settings-admin' // Page
+		);
+
+		add_settings_field(
+			'twitter_follow_username',
+			'Twitter Username',
+			array( $this, 'twitter_follow_username_callback' ),
+			'mpaluchowski-settings-admin',
+			'section_twitter'
+		);
+
 	}
 
 	/**
@@ -121,6 +137,12 @@ class MpaluchowskiSettingsPage {
 
 		if( isset( $input['addthis_track_clickback'] ) )
 			$new_input['addthis_track_clickback'] = absint( $input['addthis_track_clickback'] );
+
+		if( isset( $input['twitter_follow_username'] ) ) {
+			$new_input['twitter_follow_username'] = sanitize_text_field( $input['twitter_follow_username'] );
+			// Remove leading @, if entered by user; not needed
+			$new_input['twitter_follow_username'] = preg_replace('#@(.*)#', '$1', $new_input['twitter_follow_username']);
+		}
 
 		return $new_input;
 	}
@@ -165,6 +187,19 @@ class MpaluchowskiSettingsPage {
 		print('<input type="checkbox" id="addthis_track_clickback" name="mpaluchowski_option[addthis_track_clickback]" value="1" ' . checked( 1, get_option( 'mpaluchowski_option' )['addthis_track_clickback'], false ) . '>');
 		print('<p class="description">' . __('Should AddThis append a tracking ID to the links being shared?', 'mpaluchowski') . '</p>');
 	}
+
+	public function print_twitter_section_info() {
+		print 'Enter settings for Twitter widgets:';
+	}
+
+	public function twitter_follow_username_callback() {
+		printf(
+			'<input type="text" id="twitter_follow_username" name="mpaluchowski_option[twitter_follow_username]" value="%s">',
+			isset( $this->options['twitter_follow_username'] ) ? esc_attr( $this->options['twitter_follow_username']) : ''
+		);
+		print('<p class="description">' . __('Your Twitter handle for the Follow button, <strong>without</strong> the leading @ sign', 'mpaluchowski') . '</p>');
+	}
+
 }
 
 if( is_admin() )

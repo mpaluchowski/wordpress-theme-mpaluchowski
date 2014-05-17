@@ -43,10 +43,13 @@ blockquote {
 
 	cite {
 		font-size: 1.2rem;
-		font-style: italic;
 
 		&:before {
 			content: "\2014  ";
+		}
+
+		a {
+			font-style: italic;
 		}
 	}
 }

@@ -127,3 +127,21 @@ pre {
 		font-size: 1.3rem;
 	}
 }
+
+hr {
+	border: 0;
+	height: 20px;
+	margin: 2rem 0;
+	position: relative;
+
+	&:after {
+		content: "\2217  \2217  \2217";
+		font-size: 1.8rem;
+		left: 50%;
+		margin-left: -50px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 100px;
+	}
+}

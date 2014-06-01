@@ -161,10 +161,6 @@
 					if ( comments_open() || get_comments_number() ) {
 						comments_template();
 					}
-
-					if ( !comments_open() ) {
-						echo '<p class="no-comments">' . __( 'Comments are closed.', 'mpaluchowski' ) . '</p>';
-					}
 				?>
 			</section>
 			<?php

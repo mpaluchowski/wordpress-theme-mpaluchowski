@@ -1,4 +1,8 @@
-			<?php comment_form(); ?>
+	<?php
+		if ( have_comments() ):
+
+			comment_form();
+	?>
 
 			<ol class="comment-list">
 				<?php
@@ -9,3 +13,11 @@
 					) );
 				?>
 			</ol>
+
+	<?php
+			if ( !comments_open() ) {
+				echo '<p class="no-comments">' . __( 'Comments are closed.', 'mpaluchowski' ) . '</p>';
+			}
+
+		endif; // have_comments()
+	?>

@@ -371,6 +371,10 @@ main {
 	.comments {
 		margin-top: 50px;
 
+		a {
+			color: $green-link;
+		}
+
 		p.no-comments {
 			background: #EEE;
 			font-size: 1.4rem;
@@ -431,7 +435,6 @@ main {
 			}
 
 			a {
-				color: $green-link;
 				text-decoration: none;
 			}
 

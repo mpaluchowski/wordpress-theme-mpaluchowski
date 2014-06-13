@@ -137,7 +137,7 @@ function mpaluchowski_get_excerpt( $post_id = 0, $length = 35 ) {
 		array_push( $words, '...' );
 		$the_excerpt = implode( ' ', $words );
 	}
-	return $the_excerpt;
+	return htmlspecialchars( $the_excerpt );
 }
 
 // Add Theme Settings Page

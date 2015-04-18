@@ -65,13 +65,7 @@
 		<?php endif; ?>
 
 		<div id="site-search">
-			<form role="search" method="get" id="searchform" class="searchform" action="http://michal.paluchowski.com/">
-				<div>
-					<label class="screen-reader-text" for="s">Search for:</label>
-					<input type="text" value="" name="s" id="s" placeholder="Search for...">
-					<button type="submit">Search</button>
-				</div>
-			</form>
+			<?php get_search_form() ?>
 		</div>
 	</header>
 

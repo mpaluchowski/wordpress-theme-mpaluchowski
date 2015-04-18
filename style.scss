@@ -86,7 +86,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #site-search {
 	margin: 20px 0 10px;
 
-	label {
+	.screen-reader-text {
 		display: none;
 	}
 
@@ -101,7 +101,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		}
 	}
 
-	button[type=submit] {
+	input[type=submit] {
 		background: transparent url(images/search24.png) no-repeat center center;
 		border: 0;
 		cursor: pointer;

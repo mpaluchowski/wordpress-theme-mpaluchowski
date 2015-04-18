@@ -22,7 +22,7 @@ function mpaluchowski_setup() {
 
 	// Enable HTML5 markup for widgets
 	add_theme_support( 'html5', array(
-		'search-form', 'comment-form', 'comment-list',
+		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
 	) );
 
 }

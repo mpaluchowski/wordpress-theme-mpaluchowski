@@ -24,8 +24,8 @@
 	<meta name="twitter:description" content="<?php bloginfo( 'description' ) ?>">
 	<?php endif; ?>
 	<?php if ( has_post_thumbnail() ): ?>
-	<meta property="og:image" content="<?php wp_get_attachment_image_src( get_post_thumbnail_id() ) ?>">
-	<meta property="twitter:image" content="<?php wp_get_attachment_image_src( get_post_thumbnail_id() ) ?>">
+	<meta property="og:image" content="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id() )[0] ?>">
+	<meta property="twitter:image" content="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id() )[0] ?>">
 	<?php endif; ?>
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:creator" content="@mpaluchowski">
@@ -79,6 +79,9 @@
 				<p class="post-meta">
 					<time class="dt-published" datetime="<?php echo get_the_date( 'c' ) ?>" itemprop="datePublished"><?php echo esc_html( get_the_date() ) ?></time>
 					<span class="comments"><?php comments_popup_link( __( 'Leave a comment', 'mpaluchowski' ), __( '1 Comment', 'mpaluchowski' ), __( '% Comments', 'mpaluchowski' ) ); ?></span>
+					<?php if ( has_post_thumbnail() ): ?>
+					<meta itemprop="image" content="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id() )[0] ?>">
+					<?php endif; ?>
 				</p>
 				<?php
 					if ( is_single() ) {

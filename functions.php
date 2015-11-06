@@ -17,6 +17,7 @@ function mpaluchowski_setup() {
 		'flex-height' => true,
 		'header-text' => false
 		] );
+	add_theme_support( 'post-thumbnails' );
 
 	add_editor_style( array( 'css/editor-style.css' ) );
 

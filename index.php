@@ -185,7 +185,7 @@
 	<div id="side-links">
 		<nav id="side-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 			<ul>
-				<li><a href="http://michal.paluchowski.com/about/" rel="author">About Michał</a></li>
+				<li><a href="//michal.paluchowski.com/about/" rel="author">About Michał</a></li>
 			</ul>
 		</nav>
 

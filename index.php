@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
+<head itemscope itemtype="http://schema.org/WebSite">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<meta name="name" itemprop="name" content="<?php echo get_bloginfo( 'name' ) ?>">
 	<?php if ( is_single() ): ?>
 	<meta name="description" content="<?php echo mpaluchowski_get_excerpt( 0, 30 ) ?>">
 	<meta property="og:url" content="<?php the_permalink() ?>">

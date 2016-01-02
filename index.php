@@ -106,7 +106,7 @@
 				<a class="addthis_button_<?php echo $service ?>"></a>
 				<?php endforeach; ?>
 				</div>
-				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=<?php echo get_option( 'mpaluchowski_option' )['addthis_profile_id'] ?>"></script>
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=<?php echo get_option( 'mpaluchowski_option' )['addthis_profile_id'] ?>" async="async"></script>
 				<script type="text/javascript">
 					var addthis_share = addthis_share || {}
 						addthis_share = {

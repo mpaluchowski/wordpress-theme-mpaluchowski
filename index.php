@@ -70,7 +70,7 @@
 		</div>
 	</header>
 
-	<main role="main" itemprop="mainEntity" itemscope itemtype="http://schema.org/Blog">
+	<main itemprop="mainEntity" itemscope itemtype="http://schema.org/Blog">
 		<?php
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();
@@ -184,7 +184,7 @@
 	</main>
 
 	<div id="side-links">
-		<nav id="side-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+		<nav id="side-navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 			<ul>
 				<li><a href="//michal.paluchowski.com/about/" rel="author">About Michał</a></li>
 			</ul>

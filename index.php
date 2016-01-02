@@ -93,9 +93,7 @@
 				?>
 			</header>
 			<section class="post-content e-content" itemprop="articleBody">
-				<?php
-					the_content();
-				?>
+				<?php the_content(); ?>
 			</section>
 			<footer>
 				<?php if ( is_single() ): ?>
@@ -133,13 +131,9 @@
 
 				<section class="author-description">
 					<h4>Written by <span class="p-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php echo get_the_author() ?></span></span></h4>
-				<?php
-					if ( get_the_author_meta( 'description' ) ):
-				?>
+				<?php if ( get_the_author_meta( 'description' ) ): ?>
 					<p><?php the_author_meta( 'description' ); ?></p>
-				<?php
-					endif; // Check author description
-				?>
+				<?php endif; // Check author description ?>
 				</section>
 
 				<nav class="post-navigation-links">
@@ -151,9 +145,7 @@
 				<?php endif; // is_single() ?>
 			</footer>
 
-			<?php
-				if ( is_single() ):
-			?>
+			<?php if ( is_single() ): ?>
 			<section class="comments">
 				<?php
 					if ( comments_open() || get_comments_number() ) {
@@ -161,13 +153,9 @@
 					}
 				?>
 			</section>
-			<?php
-				endif; // is_single()
-			?>
+			<?php endif; // is_single() ?>
 		</article>
-		<?php
-				endwhile; // have_posts()
-		?>
+		<?php endwhile; // have_posts() ?>
 
 		<?php if ( !is_singular() ): ?>
 		<nav class="post-navigation-links">
@@ -178,9 +166,7 @@
 		</nav>
 		<?php endif; // is_singular() ?>
 
-		<?php
-			endif; // have_posts()
-		?>
+		<?php endif; // have_posts() ?>
 	</main>
 
 	<div id="side-links">

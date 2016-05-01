@@ -165,7 +165,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		margin-top: 50px;
 
 		a {
+			border-bottom: 1px solid #C9C9C9;
 			color: $green-link;
+			text-decoration: none;
 		}
 	}
 }

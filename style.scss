@@ -322,7 +322,9 @@ main {
 					line-height: 140%;
 
 					a {
+						border-bottom: 1px solid #C9C9C9;
 						color: $green-header;
+						text-decoration: none;
 					}
 				}
 			}

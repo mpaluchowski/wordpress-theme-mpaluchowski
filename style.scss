@@ -137,6 +137,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		margin: .4em 0 .4em 1em;
 		padding-left: .4em;
 		position: relative;
+	}
+
+	a {
+		color: #000;
+		text-decoration: none;
 
 		&:before {
 			background: #C9C9C9;
@@ -153,11 +158,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		&:hover:before {
 			background: $green-header;
 		}
-	}
-
-	a {
-		color: #000;
-		text-decoration: none;
 	}
 }
 

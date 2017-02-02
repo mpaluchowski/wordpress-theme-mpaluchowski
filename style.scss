@@ -112,6 +112,55 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 }
 
+.widget {
+	margin: 20px 15px 15px 0;
+	width: 270px;
+
+	&__title {
+		font: {
+			family: Roboto, Arial, sans-serif;
+			size: 1.6rem;
+			weight: 900;
+		}
+		margin-bottom: .6em;
+	}
+}
+
+
+.widget_nav_menu {
+	margin: 20px 15px 15px 0;
+	width: 270px;
+
+	li {
+		font-size: 1.4rem;
+		line-height: 1.428;
+		margin: .4em 0 .4em 1em;
+		padding-left: .4em;
+		position: relative;
+
+		&:before {
+			background: #C9C9C9;
+			border-radius: 50%;
+			content: " ";
+			display: block;
+			left: -1em;
+			height: 1em;
+			position: absolute;
+			top: .1em;
+			width: 1em;
+		}
+
+		&:hover:before {
+			background: $green-header;
+		}
+	}
+
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+}
+
 #side-navigation {
 	margin: 20px 15px 15px 0;
 	width: 270px;

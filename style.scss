@@ -161,41 +161,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 }
 
-#side-navigation {
-	margin: 20px 15px 15px 0;
-	width: 270px;
-
-	li {
-		margin: 10px 0;
-	}
-
-	a {
-		color: #000;
-		font-size: 1.4rem;
-		font-weight: bold;
-		margin-left: 1em;
-		padding-left: .4em;
-		position: relative;
-		text-decoration: none;
-
-		&:before {
-			background: #C9C9C9;
-			border-radius: 50%;
-			content: " ";
-			display: block;
-			left: -1em;
-			height: 1em;
-			position: absolute;
-			top: .1em;
-			width: 1em;
-		}
-
-		&:hover:before {
-			background: $green-header;
-		}
-	}
-}
-
 #side-links {
 	float: left;
 	clear: left;

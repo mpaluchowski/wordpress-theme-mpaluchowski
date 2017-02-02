@@ -50,6 +50,19 @@ function mpaluchowski_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'mpaluchowski_scripts' );
 
+function mpaluchowski_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Sidebar', 'mpaluchowski' ),
+		'id'            => 'sidebar-page-content',
+		'description'   => __( 'Add widgets here to appear in the left-hand column.', 'mpaluchowski' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget__title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'mpaluchowski_widgets_init' );
+
 function mpaluchowski_wp_title( $title, $sep ) {
 	global $paged, $page;
 

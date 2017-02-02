@@ -170,6 +170,10 @@
 	</main>
 
 	<div id="side-links">
+		<?php if ( is_active_sidebar( 'sidebar-page-content' )  ) : ?>
+		<?php dynamic_sidebar( 'sidebar-page-content' ); ?>
+		<?php endif; ?>
+
 		<nav id="side-navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 			<ul>
 				<li><a href="//michal.paluchowski.com/about/" rel="author">About Michał</a></li>

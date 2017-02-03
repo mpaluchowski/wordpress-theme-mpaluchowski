@@ -102,8 +102,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 
 	input[type=submit] {
-		background: transparent url(images/search.svg) no-repeat center center;
-		background-size: contain;
+		background: url(images/search.svg) center / contain no-repeat  transparent;
 		border: 0;
 		cursor: pointer;
 		height: 24px;
@@ -267,9 +266,7 @@ main {
 				margin-right: 10px;
 
 				&:before {
-					background-size: contain;
-					background-position: center;
-					background-repeat: no-repeat;
+					background: center / contain no-repeat;
 					display: inline-block;
 					content: "";
 					margin: 0 5px 0 0;
@@ -299,10 +296,7 @@ main {
 				margin-left: 21px;
 
 				&:before {
-					background-size: contain;
-					background-position: center;
-					background-repeat: no-repeat;
-					background-image: url(images/tag.svg);
+					background: url(images/tag.svg) center / contain no-repeat;
 					content: "";
 					position: absolute;
 					margin: 4px 0 0 -21px;
@@ -379,10 +373,7 @@ main {
 				float: left;
 
 				&:before {
-					background-size: contain;
-					background-position: center;
-					background-repeat: no-repeat;
-					background-image: url(images/arrow-left.svg);
+					background: url(images/arrow-left.svg) center / contain no-repeat;
 					content: "";
 					height: 16px;
 					position: absolute;
@@ -396,10 +387,7 @@ main {
 				text-align: right;
 
 				&:after {
-					background-size: contain;
-					background-position: center;
-					background-repeat: no-repeat;
-					background-image: url(images/arrow-right.svg);
+					background: url(images/arrow-right.svg) center / contain no-repeat;
 					content: "";
 					height: 16px;
 					position: absolute;
@@ -471,10 +459,7 @@ main {
 				margin-top: 5px;
 
 				&:before {
-					background-size: contain;
-					background-position: center;
-					background-repeat: no-repeat;
-					background-image: url(images/clock.svg);
+					background: url(images/clock.svg) center / contain no-repeat;
 					content: "";
 					margin-right: 2px;
 					vertical-align: -20%;
@@ -490,10 +475,7 @@ main {
 				margin-top: 15px;
 
 				&:before {
-					background-size: contain;
-					background-position: center;
-					background-repeat: no-repeat;
-					background-image: url(images/bubble.svg);
+					background: url(images/bubble.svg) center / contain no-repeat;
 					content: "";
 					vertical-align: -20%;
 				}

@@ -1,0 +1,10 @@
+@mixin icon($image: null, $size: 16px) {
+	@if $image {
+		background: url($image) center / contain no-repeat;
+	} @else {
+		background: center / contain no-repeat;
+	}
+	content: "";
+	height: $size;
+	width: $size;
+}

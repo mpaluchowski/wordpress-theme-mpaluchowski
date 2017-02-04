@@ -141,10 +141,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			top: .1em;
 			width: 1em;
 		}
+	}
 
-		&:hover:before {
-			background: $green-header;
-		}
+	a:hover:before,
+	.current-menu-item a:before {
+		background: $green-header;
 	}
 }
 

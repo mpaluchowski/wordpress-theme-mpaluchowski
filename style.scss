@@ -114,8 +114,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .widget {
-	margin: 20px 15px 15px 0;
-	width: 270px;
+	margin: 20px 0 15px 0;
 
 	&__title {
 		font: {
@@ -129,9 +128,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 .widget_nav_menu {
-	margin: 20px 15px 15px 0;
-	width: 270px;
-
 	li {
 		font-size: 1.4rem;
 		line-height: 1.428;

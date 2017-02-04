@@ -77,6 +77,7 @@
 		?>
 		<article class="h-entry" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 			<header>
+				<?php if ( !is_page() ): ?>
 				<p class="post-meta">
 					<time class="dt-published" datetime="<?php echo get_the_date( 'c' ) ?>" itemprop="datePublished"><?php echo esc_html( get_the_date() ) ?></time>
 					<span class="comments"><?php comments_popup_link( __( 'Leave a comment', 'mpaluchowski' ), __( '1 Comment', 'mpaluchowski' ), __( '% Comments', 'mpaluchowski' ) ); ?></span>
@@ -84,6 +85,7 @@
 					<meta itemprop="image" content="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id() )[0] ?>">
 					<?php endif; ?>
 				</p>
+				<?php endif; // is_page() ?>
 				<?php
 					if ( is_single() ) {
 						the_title( '<h1 class="p-name" itemprop="name headline">', '</h1>' );

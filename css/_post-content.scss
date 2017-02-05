@@ -28,6 +28,20 @@ p, blockquote, li {
 	}
 }
 
+figure {
+	margin: 20px auto;
+	text-align: center;
+
+	img {
+		max-width: 100%;
+	}
+
+	figcaption {
+		font-size: 1.2rem;
+		margin-top: .6em;
+	}
+}
+
 blockquote {
 	border-left: 4px solid #C9C9C9;
 	color: lighten(#000, 15%);

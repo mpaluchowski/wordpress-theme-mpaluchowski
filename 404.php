@@ -11,8 +11,11 @@
 
 <body <?php body_class() ?> itemscope itemtype="http://schema.org/WebPage">
 
-<div id="wrap">
+<div class="wrap-404">
 	<?php get_template_part( 'template-parts/header' ); ?>
+
+	<main class="content-404">
+	</main>
 </div>
 
 <?php wp_footer(); ?>

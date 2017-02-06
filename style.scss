@@ -559,6 +559,55 @@ body.single {
 	}
 }
 
+body.error404 {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.wrap-404 {
+	display: flex;
+	max-width: $content-width;
+	position: relative;
+
+	@media #{$responsive-phone} {
+		flex-direction: column;
+	}
+
+	#site-head {
+		@media #{$responsive-tablet} {
+			flex: 0 0 185px;
+		}
+		@media #{$responsive-desktop} {
+			flex: 0 0 285px;
+		}
+	}
+}
+
+.content-404 {
+	background: #FFF;
+	border: {
+		color: #C9C9C9;
+		style: solid;
+	}
+	box-sizing: border-box;
+	flex: 1 1 100%;
+	padding: 20px 20px 40px;
+
+	@media #{$responsive-phone} {
+		border-width: 1px 0 1px;
+	}
+
+	@media #{$responsive-tablet} {
+		border-width: 1px 0 1px 1px;
+	}
+
+	@media #{$responsive-desktop} {
+		border-width: 1px;
+	}
+}
+
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;

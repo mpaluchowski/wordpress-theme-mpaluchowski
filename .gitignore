@@ -1,4 +1,20 @@
+### Intellij ###
+.idea/
+*.ipr
+*.iws
+*.iml
+
+### SublimeText ###
+*.sublime-workspace
+*.sublime-project
+
+### Visual Studio Code ###
+.vscode
+
+### SASS ###
 .sass-cache
 *.css
 *.css.map
-*.sublime-*
+
+### Website ###
+*/dload/

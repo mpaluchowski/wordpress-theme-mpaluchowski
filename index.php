@@ -41,7 +41,7 @@
 <div id="wrap">
 	<?php get_template_part( 'template-parts/header' ); ?>
 
-	<main itemprop="mainEntity" itemscope itemtype="http://schema.org/Blog">
+	<main class="content-main" itemprop="mainEntity" itemscope itemtype="http://schema.org/Blog">
 		<?php
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();

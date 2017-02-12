@@ -20,7 +20,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "css/reset";
 
 #wrap {
-	max-width: 960px;
+	max-width: $content-width;
 	margin: 0 auto;
 	position: relative;
 }
@@ -38,7 +38,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 
 	@media #{$responsive-desktop} {
-		width: 270px;
+		width: 285px;
 	}
 }
 
@@ -150,6 +150,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 #side-links {
+	box-sizing: border-box;
 	float: left;
 	clear: left;
 
@@ -158,7 +159,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 
 	@media #{$responsive-tablet-desktop} {
-		padding: 15px 0 0;
+		padding: 15px 15px 0 0;
 	}
 
 	footer {
@@ -174,7 +175,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 }
 
-main {
+.content-main {
 	background: #FFF;
 	border: {
 		color: #C9C9C9;
@@ -212,13 +213,7 @@ main {
 
 		header {
 			h1, h2 {
-				font: bold 2.4rem/1.3 Arial, Helvetica, sans-serif;
-				margin-bottom: 15px;
-
-				a {
-					color: #000;
-					text-decoration: none;
-				}
+				@include post-title;
 			}
 
 			.post-meta {
@@ -320,10 +315,6 @@ main {
 					}
 				}
 			}
-		}
-
-		.post-content {
-			@import "css/post-content";
 		}
 	}
 
@@ -556,6 +547,63 @@ body.single {
 			}
 		}
 	}
+}
+
+body.error404 {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.wrap-404 {
+	display: flex;
+	max-width: $content-width;
+	position: relative;
+
+	@media #{$responsive-phone} {
+		flex-direction: column;
+	}
+
+	#site-head {
+		@media #{$responsive-tablet} {
+			flex: 0 0 185px;
+		}
+		@media #{$responsive-desktop} {
+			flex: 0 0 285px;
+		}
+	}
+}
+
+.content-404 {
+	background: #FFF;
+	border: {
+		color: #C9C9C9;
+		style: solid;
+	}
+	box-sizing: border-box;
+	flex: 1 1 100%;
+	padding: 20px 20px 40px;
+
+	@media #{$responsive-phone} {
+		border-width: 1px 0 1px;
+	}
+
+	@media #{$responsive-tablet} {
+		border-width: 1px 0 1px 1px;
+	}
+
+	@media #{$responsive-desktop} {
+		border-width: 1px;
+	}
+
+	h1 {
+		@include post-title;
+	}
+}
+
+.post-content {
+	@import "css/post-content";
 }
 
 .screen-reader-text {

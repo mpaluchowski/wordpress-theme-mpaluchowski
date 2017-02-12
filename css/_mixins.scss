@@ -8,3 +8,13 @@
 	height: $size;
 	width: $size;
 }
+
+@mixin post-title() {
+	font: bold 2.4rem/1.3 Arial, Helvetica, sans-serif;
+	margin-bottom: 15px;
+
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+}

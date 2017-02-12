@@ -39,38 +39,9 @@
 <body <?php body_class() ?> itemscope itemtype="http://schema.org/WebPage">
 
 <div id="wrap">
-	<header id="site-head" itemscope itemtype="http://schema.org/WPHeader">
+	<?php get_template_part( 'template-parts/header' ); ?>
 
-		<?php if ( get_header_image() ) : ?>
-		<div id="blog-logo">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img src="<?php header_image(); ?>" alt="">
-			</a>
-		</div>
-		<?php endif; ?>
-
-		<?php if ( is_single() ): ?>
-			<div id="site-title" itemprop="headline">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<?php bloginfo( 'name' ); ?>
-				</a>
-			</div>
-			<div id="site-description" itemprop="description"><?php bloginfo( 'description' ); ?></div>
-		<?php else: ?>
-			<h1 itemprop="headline">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<?php bloginfo( 'name' ); ?>
-				</a>
-			</h1>
-			<h2 itemprop="description"><?php bloginfo( 'description' ); ?></h2>
-		<?php endif; ?>
-
-		<div id="site-search">
-			<?php get_search_form() ?>
-		</div>
-	</header>
-
-	<main itemprop="mainEntity" itemscope itemtype="http://schema.org/Blog">
+	<main class="content-main" itemprop="mainEntity" itemscope itemtype="http://schema.org/Blog">
 		<?php
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();
@@ -87,10 +58,10 @@
 				</p>
 				<?php endif; // is_page() ?>
 				<?php
-					if ( is_single() ) {
-						the_title( '<h1 class="p-name" itemprop="name headline">', '</h1>' );
-					} else {
+					if ( is_home() ) {
 						the_title( '<h2 class="p-name" itemprop="name headline"><a href="' . esc_url( get_permalink() ) . '" class="u-url">', '</a></h2>' );
+					} else {
+						the_title( '<h1 class="p-name" itemprop="name headline">', '</h1>' );
 					}
 				?>
 			</header>

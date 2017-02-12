@@ -8,20 +8,20 @@
 	</div>
 	<?php endif; ?>
 
-	<?php if ( is_single() ): ?>
-		<div id="site-title" itemprop="headline">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<?php bloginfo( 'name' ); ?>
-			</a>
-		</div>
-		<div id="site-description" itemprop="description"><?php bloginfo( 'description' ); ?></div>
-	<?php else: ?>
+	<?php if ( is_home() ): ?>
 		<h1 itemprop="headline">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<?php bloginfo( 'name' ); ?>
 			</a>
 		</h1>
 		<h2 itemprop="description"><?php bloginfo( 'description' ); ?></h2>
+	<?php else: ?>
+		<div id="site-title" itemprop="headline">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<?php bloginfo( 'name' ); ?>
+			</a>
+		</div>
+		<div id="site-description" itemprop="description"><?php bloginfo( 'description' ); ?></div>
 	<?php endif; ?>
 
 	<div id="site-search">

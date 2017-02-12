@@ -58,10 +58,10 @@
 				</p>
 				<?php endif; // is_page() ?>
 				<?php
-					if ( is_single() ) {
-						the_title( '<h1 class="p-name" itemprop="name headline">', '</h1>' );
-					} else {
+					if ( is_home() ) {
 						the_title( '<h2 class="p-name" itemprop="name headline"><a href="' . esc_url( get_permalink() ) . '" class="u-url">', '</a></h2>' );
+					} else {
+						the_title( '<h1 class="p-name" itemprop="name headline">', '</h1>' );
 					}
 				?>
 			</header>

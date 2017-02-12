@@ -1,7 +1,7 @@
 mpaluchowski WordPress Theme
 ============================
 
-This is the custom [WordPress](http://www.wordpress.org/) theme I use for my blog at http://michal.paluchowski.com/. It's mostly tailored to my needs and preferences, although I try to keep it flexible and configurable.
+This is the custom [WordPress](https://wordpress.org/) theme I use for my blog at [michal.paluchowski.com](https://michal.paluchowski.com/). It's mostly tailored to my needs and preferences, although I try to keep it flexible and configurable.
 
 Features
 --------

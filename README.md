@@ -9,6 +9,7 @@ Features
 * self-contained - doesn't rely on external widgets or plug-ins; all customizations are within the theme's code
 * responsive design - for desktops, tablets and mobile phones
 * HTML5 and CSS3
+* configurable sidebar for widgets
 * Schema.org and Microformats markup
 * AddThis sharing widgets
 * Support for translations

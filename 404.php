@@ -15,6 +15,8 @@
 	<?php get_template_part( 'template-parts/header' ); ?>
 
 	<main class="content-404">
+		<h1><?php _e( 'Oops! No page here', 'mpaluchowski' ); ?></h1>
+		<p><?php _e( "We couldn't find anything at this location. Maybe it went missing, or maybe it was never here in the first place. Try <a href=\"" . home_url() . "\">starting from home</a> or use the search form in the sidebar.", 'mpaluchowski' ); ?></p>
 	</main>
 </div>
 

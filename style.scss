@@ -322,10 +322,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 				}
 			}
 		}
-
-		.post-content {
-			@import "css/post-content";
-		}
 	}
 
 	.post-navigation-links {
@@ -606,6 +602,10 @@ body.error404 {
 	@media #{$responsive-desktop} {
 		border-width: 1px;
 	}
+}
+
+.post-content {
+	@import "css/post-content";
 }
 
 .screen-reader-text {

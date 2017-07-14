@@ -98,7 +98,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 
 	input[type=submit] {
-		background: url(images/search.svg) center / contain no-repeat  transparent;
+		@include icon("images/search.svg");
 		border: 0;
 		cursor: pointer;
 		height: 24px;

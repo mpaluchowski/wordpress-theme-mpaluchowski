@@ -98,12 +98,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 
 	input[type=submit] {
-		@include icon("images/search.svg");
+		@include icon("images/search.svg", 24px);
 		border: 0;
 		cursor: pointer;
-		height: 24px;
 		margin-left: 5px;
-		width: 24px;
 		text-indent: -9999em;
 	}
 }

@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg5094"
-   version="1.1"
-   viewBox="0 0 9.0714283 9.0714283"
+   width="9.0714283mm"
    height="9.0714283mm"
-   width="9.0714283mm">
+   viewBox="0 0 9.0714283 9.0714283"
+   version="1.1"
+   id="svg5094">
   <defs
      id="defs5088" />
   <metadata
@@ -25,17 +25,11 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(73.327377,-61.898811)"
-     id="layer1">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:6.61458302px;font-family:FontAwesome;-inkscape-font-specification:FontAwesome;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-73.327377"
-       y="70.214287"
-       id="text4491"><tspan
-         id="tspan4489"
-         x="-73.327377"
-         y="70.214287"
-         style="stroke-width:0.26458332px"></tspan></text>
+     id="layer1"
+     transform="translate(73.327377,-61.898811)">
+    <path
+       id="path3726"
+       style="stroke-width:0.26458332px"
+       d="m -68.035711,64.355656 c 0,-0.106306 -0.08268,-0.188988 -0.188988,-0.188988 h -0.377976 c -0.106306,0 -0.188988,0.08268 -0.188988,0.188988 v 2.078869 h -1.322917 c -0.106306,0 -0.188988,0.08268 -0.188988,0.188988 v 0.377976 c 0,0.106306 0.08268,0.188988 0.188988,0.188988 h 1.889881 c 0.106306,0 0.188988,-0.08268 0.188988,-0.188988 z m 2.456845,2.078869 c 0,1.771763 -1.441034,3.212798 -3.212797,3.212798 -1.771764,0 -3.212798,-1.441035 -3.212798,-3.212798 0,-1.771763 1.441034,-3.212798 3.212798,-3.212798 1.771763,0 3.212797,1.441035 3.212797,3.212798 z m 1.322917,0 c 0,-2.504092 -2.031622,-4.535714 -4.535714,-4.535714 -2.504092,0 -4.535714,2.031622 -4.535714,4.535714 0,2.504092 2.031622,4.535714 4.535714,4.535714 2.504092,0 4.535714,-2.031622 4.535714,-4.535714 z" />
   </g>
 </svg>

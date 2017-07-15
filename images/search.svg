@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg4525"
-   version="1.1"
-   viewBox="0 0 9.8273811 9.8273802"
+   width="9.8273811mm"
    height="9.8273802mm"
-   width="9.8273811mm">
+   viewBox="0 0 9.8273811 9.8273802"
+   version="1.1"
+   id="svg4525">
   <defs
      id="defs4519" />
   <metadata
@@ -25,17 +25,11 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(63.122025,-35.818454)"
-     id="layer1">
-    <text
-       id="text4487"
-       y="44.13393"
-       x="-63.122025"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:6.61458302px;font-family:FontAwesome;-inkscape-font-specification:FontAwesome;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="line-height:6.61458302px;stroke-width:0.26458332px"
-         y="44.13393"
-         x="-63.122025"
-         id="tspan4485"></tspan></text>
+     id="layer1"
+     transform="translate(63.122025,-35.818454)">
+    <path
+       id="path3747"
+       style="line-height:6.61458302px;stroke-width:0.26458332px"
+       d="m -56.318453,39.976192 c 0,1.458752 -1.187082,2.645833 -2.645834,2.645833 -1.458751,0 -2.645833,-1.187081 -2.645833,-2.645833 0,-1.458752 1.187082,-2.645833 2.645833,-2.645833 1.458752,0 2.645834,1.187081 2.645834,2.645833 z m 3.023809,4.913691 c 0,-0.2008 -0.08268,-0.395694 -0.218517,-0.531529 l -2.025716,-2.025717 c 0.478376,-0.690987 0.732328,-1.51781 0.732328,-2.356445 0,-2.297386 -1.860351,-4.157738 -4.157738,-4.157738 -2.297386,0 -4.157738,1.860352 -4.157738,4.157738 0,2.297387 1.860352,4.157738 4.157738,4.157738 0.838635,0 1.665458,-0.253953 2.356446,-0.732329 l 2.025716,2.019811 c 0.135835,0.141741 0.330729,0.224423 0.531529,0.224423 0.413411,0 0.755952,-0.342541 0.755952,-0.755952 z" />
   </g>
 </svg>

@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg6801"
-   version="1.1"
-   viewBox="0 0 8.9474049 8.9474049"
+   width="8.9474049mm"
    height="8.9474049mm"
-   width="8.9474049mm">
+   viewBox="0 0 8.9474049 8.9474049"
+   version="1.1"
+   id="svg6801">
   <defs
      id="defs6795" />
   <metadata
@@ -25,17 +25,11 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(56.634418,-126.97273)"
-     id="layer1">
-    <text
-       id="text4503"
-       y="135.28821"
-       x="-56.634418"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:6.61458302px;font-family:FontAwesome;-inkscape-font-specification:FontAwesome;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="stroke-width:0.26458332px"
-         y="135.28821"
-         x="-56.634418"
-         id="tspan4501"></tspan></text>
+     id="layer1"
+     transform="translate(56.634418,-126.97273)">
+    <path
+       id="path3759"
+       style="stroke-width:0.26458332px"
+       d="m -53.988585,128.86261 c 0,0.41932 -0.336635,0.75596 -0.755953,0.75596 -0.419317,0 -0.755952,-0.33664 -0.755952,-0.75596 0,-0.41931 0.336635,-0.75595 0.755952,-0.75595 0.419318,0 0.755953,0.33664 0.755953,0.75595 z m 6.301571,3.40179 c 0,-0.2008 -0.08268,-0.3957 -0.218517,-0.53744 l -4.222703,-4.21679 c -0.301199,-0.3012 -0.87407,-0.53744 -1.293387,-0.53744 h -2.456845 c -0.413412,0 -0.755952,0.34254 -0.755952,0.75595 v 2.45685 c 0,0.41932 0.236235,0.99219 0.537434,1.28748 l 4.222703,4.22861 c 0.135835,0.13583 0.330729,0.21852 0.531529,0.21852 0.2008,0 0.395694,-0.0827 0.537435,-0.21852 l 2.899786,-2.90569 c 0.135835,-0.13584 0.218517,-0.33073 0.218517,-0.53153 z" />
   </g>
 </svg>

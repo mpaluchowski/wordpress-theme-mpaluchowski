@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg5663"
-   version="1.1"
-   viewBox="0 0 8.6934519 9.2013578"
+   width="8.6934519mm"
    height="9.2013578mm"
-   width="8.6934519mm">
+   viewBox="0 0 8.6934519 9.2013578"
+   version="1.1"
+   id="svg5663">
   <defs
      id="defs5657" />
   <metadata
@@ -25,17 +25,11 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(69.358634,-71.661224)"
-     id="layer1">
-    <text
-       id="text4495"
-       y="79.663689"
-       x="-69.73661"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:6.61458302px;font-family:FontAwesome;-inkscape-font-specification:FontAwesome;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="stroke-width:0.26458332px"
-         y="79.663689"
-         x="-69.73661"
-         id="tspan4493"></tspan></text>
+     id="layer1"
+     transform="translate(69.358634,-71.661224)">
+    <path
+       id="path3688"
+       style="stroke-width:0.26458332px"
+       d="m -60.665182,75.883927 c 0,-0.4016 -0.265765,-0.755952 -0.690988,-0.755952 h -4.157738 l 1.730422,-1.730423 c 0.141741,-0.141741 0.224424,-0.336635 0.224424,-0.537435 0,-0.200799 -0.08268,-0.395693 -0.224424,-0.537434 l -0.44294,-0.437035 c -0.141741,-0.141741 -0.33073,-0.224424 -0.531529,-0.224424 -0.2008,0 -0.395694,0.08268 -0.537435,0.224424 l -3.844727,3.83882 c -0.135835,0.141741 -0.218517,0.336635 -0.218517,0.537435 0,0.2008 0.08268,0.395694 0.218517,0.531529 l 3.844727,3.850632 c 0.141741,0.135836 0.336635,0.218518 0.537435,0.218518 0.200799,0 0.395693,-0.08268 0.531529,-0.218518 l 0.44294,-0.448846 c 0.141741,-0.135836 0.224424,-0.330729 0.224424,-0.531529 0,-0.2008 -0.08268,-0.395694 -0.224424,-0.531529 l -1.730422,-1.736328 h 4.157738 c 0.425223,0 0.690988,-0.354353 0.690988,-0.755953 z" />
   </g>
 </svg>
